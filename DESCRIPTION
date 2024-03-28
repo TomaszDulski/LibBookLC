@@ -15,3 +15,8 @@ Imports:
 	stringr (>= 1.5.0),
 	RSelenium (>= 1.7.9),
 	dplyr
+Depends:
+	rvest (>= 1.0.3),
+	stringr (>= 1.5.0),
+	RSelenium (>= 1.7.9),
+	dplyr
