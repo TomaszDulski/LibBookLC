@@ -150,6 +150,11 @@ personal library:
 </p>
 
 ``` r
+# run these packages first
+library(rvest)
+library(stringr)
+library(dplyr)
+
 # Scrap the data of the books
 
 URL <- "https://lubimyczytac.pl/ksiegozbior/9YsJPg7kuPc"
