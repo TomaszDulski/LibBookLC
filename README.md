@@ -194,9 +194,9 @@ Save the output:
 ``` r
 # Saving
 
-write.csv(all_book, "book_data_test.csv", row.names = FALSE)
+write.csv(good_reads_lib, "book_data_test.csv", row.names = FALSE)
 # If for some reason you cannot see the polish characters, try to save data frame with converting filecoding to UTF-8
-write.csv(all_book, "book_data_converted.csv", fileEncoding = "UTF-8", row.names = FALSE)
+write.csv(good_reads_lib, "book_data_converted.csv", fileEncoding = "UTF-8", row.names = FALSE)
 ```
 
 ## Throubleshooting and final remarks
