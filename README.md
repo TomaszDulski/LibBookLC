@@ -35,11 +35,13 @@ The script extract the following fields:
 Check if you have devtools package, if not install it. Then install package LibBookLC.
 Remember to load the package after installation: 
 </p>
+
 ``` r
 install.packages("devtools")
 devtools::install_github('TomaszDulski/LibBookLC')
 library("LibBookLC")
 ```
+
 
 ## Input
 
