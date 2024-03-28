@@ -2,11 +2,11 @@
 
 <p align="justify">
 This package was created to extract the data from [Lubimy
-Czytać](https://lubimyczytac.pl/) which is a popular website in Poland
+Czytać]<https://lubimyczytac.pl/> which is a popular website in Poland
 for building your library of books. The website does not have an option
 to extract the library to file. Thus, if you want to transfer your
 library in third part services, like more international one [Good
-reads](https://www.goodreads.com/), you have to do it manually book by
+reads]<https://www.goodreads.com/>, you have to do it manually book by
 book. I decided to make a package that scrap the information of books
 from polish library website and format data to table file structure
 required by Good Reads.
@@ -32,11 +32,14 @@ The script extract the following fields:
 ## Instalation
 
 <p align="justify">
-Check if you have devtools package, if not install it by typing:
-`install.packages("devtools")` Then install package LibBookLC:
-`devtools::install_github('TomaszDulski/LibBookLC')` Remember to load
-the package after installation: `library("LibBookLC")`
+Check if you have devtools package, if not install it. Then install package LibBookLC.
+Remember to load the package after installation: 
 </p>
+``` r
+install.packages("devtools")
+devtools::install_github('TomaszDulski/LibBookLC')
+library("LibBookLC")
+```
 
 ## Input
 
@@ -84,7 +87,8 @@ Especially pay attention if the `binman_chromdriver` subdirectory was
 created:
 
 Windows: `C:\Users\USER\AppData\Local\binman` with several other binman
-directories Unix: `~/.local/share/binman_chromedriver/`
+directories 
+Unix: `~/.local/share/binman_chromedriver/`
 
 </p>
 
@@ -190,9 +194,9 @@ Save the output:
 ``` r
 # Saving
 
-good_reads_lib <- Transform_GoodReads_format(raw_data = res,
-                           num_books = <type here the amounts of your all book in the library>
-                                       )
+write.csv(all_book, "book_data_test.csv", row.names = FALSE)
+# If for some reason you cannot see the polish characters, try to save data frame with converting filecoding to UTF-8
+write.csv(all_book, "book_data_converted.csv", fileEncoding = "UTF-8", row.names = FALSE)
 ```
 
 ## Throubleshooting and final remarks
