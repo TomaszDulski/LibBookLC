@@ -1,0 +1,15 @@
+Package: LibBookLC
+Title: Export data from www.lubimyczytac.pl website.
+Version: 0.0.0.9000
+Authors@R: 
+    person("Tomasz_Dulski", "tomasz.dulski.td@gmail.com", role = c("aut", "cre")
+Description: Package extract the basic information of the books from the popular portal of library www.lubimyczytac.pl in Poland. Extracted information include: Title, Authors,ISBN,Rating, Date Read, Shelves, Review. Extracted data can be utilized as an input for third part services like [https://www.goodreads.com/](https://www.goodreads.com/)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Imports:
+	rvest (>= 1.0.3),
+	stringr (>= 1.5.0),
+	RSelenium (>= 1.7.9),
+	dplyr
